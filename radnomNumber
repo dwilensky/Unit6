@@ -1,0 +1,10 @@
+/* 
+ * Exercise 5.07 random number	
+ * write a function that accepts 2 numbers and returns a random number between the two values
+ * Dovi Wilensky, CS81, 10Jul2016              
+ */
+
+function getRandomNum(min, max) {
+   return Math.random() * (max - min) + min;
+}
+alert(getRandomNum(4, 5));
