@@ -4,10 +4,11 @@
  * Dovi Wilensky, CS81, 10Jul2016              
  */
 
-var avg = function(a){
+var average = function(a){
 	var result = 0;
 	for ( var i = 0; i < a.length; i ++) {
-		var result = (a[i] / a.length) * a.length;
+		var result = (a[i] / a.length) + result;
 	}
 	return result;
 }
+alert(average([4, 5, 7, 2]));
