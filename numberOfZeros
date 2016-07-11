@@ -1,0 +1,16 @@
+/* 
+ * Exercise 5.07 Number Of Zeros	
+ * write a function that returns the number of zeros in a given array
+ * Dovi Wilensky, CS81, 10Jul2016              
+ */
+
+var numberOfZeros = function(a){
+	var numOfZeros = 0;
+	for ( var i = 0, n = a.length; i < n; i ++) {
+		if (a[i] === 0){
+			numOfZeros += 1;
+		}
+	}
+	return numOfZeros;
+}
+alert(numberOfZeros([4, 0, false, 5, 0]));
