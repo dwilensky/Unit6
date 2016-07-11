@@ -1,0 +1,13 @@
+/* 
+ * Exercise 5.03 Array Average	
+ * write a function that returns the average of all items in an array
+ * Dovi Wilensky, CS81, 10Jul2016              
+ */
+
+var avg = function(a){
+	var result = 0;
+	for ( var i = 0; i < a.length; i ++) {
+		var result = (a[i] / a.length) * a.length;
+	}
+	return result;
+}
